@@ -1,0 +1,9 @@
+[[headers]]
+  for = "/videos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    Content-Type = "video/mp4"
+
+[build]
+  publish = "."
+  command = "echo 'Static site'"
